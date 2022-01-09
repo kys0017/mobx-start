@@ -1,5 +1,6 @@
-import PersonStore from './PersonStore';
-import TodoStore from './TodoStore';
+import PersonStore from "./PersonStore";
+import TodoStore from "./TodoStore";
+import UserStore from "./UserStore";
 
 export default class RootStore {
   constructor() {
@@ -7,5 +8,6 @@ export default class RootStore {
     // 각 스토어에 인자로 root 스토어의 인스턴스를 보내주면 각 스토어에서 다른 스토어에 접근 가능
     this.todoStore = new TodoStore(this);
     this.personStore = new PersonStore(this);
+    this.userStore = new UserStore(this);
   }
 }

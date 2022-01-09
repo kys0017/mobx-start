@@ -1,8 +1,9 @@
-import React from 'react';
-import './App.css';
-import PersonContainer from './containers/PersonContainer';
-import TodoContainer from './containers/TodoContainer';
-import TodoFormContainer from './containers/TodoFormContainer';
+import React from "react";
+import "./App.css";
+import PersonContainer from "./containers/PersonContainer";
+import TodoContainer from "./containers/TodoContainer";
+import TodoFormContainer from "./containers/TodoFormContainer";
+import UserListContainer from "./containers/UserListContainer";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <PersonContainer />
         <TodoContainer />
         <TodoFormContainer />
+        <UserListContainer />
       </header>
     </div>
   );
